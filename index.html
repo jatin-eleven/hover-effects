@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fade on scroll</title>
+	<link rel="stylesheet"  href="stylesheet.css">
+</head>
+<body>
+	<div class="header">
+		<div id="background"></div>
+	</div>
+	<section>
+		<h2>MAXICO CITY</h2>
+		<p>
+		Mexico City (Spanish: Ciudad de México,mexiko] (About this soundlisten) abbreviated as CDMX; Nahuatl languages: Āltepētl Mēxihco), is the capital and largest city of Mexico and the most populous city in North America.Mexico City is one of the most important cultural and financial centres in the world. It is located in the Valley of Mexico (Valle de México), a large valley in the high plateaus in the center of Mexico, at an altitude of 2,240 meters (7,350 ft). The city has 16 subdivisions, formerly known as boroughs. The 2009 population for the city proper was approximately 8.84 million people, with a land area of 1,485 square kilometers (573 sq mi). According to the most recent definition agreed upon by the federal and state governments, the population of Greater Mexico City is 21.3 million, which makes it the second largest metropolitan area of the Western Hemisphere, the eleventh-largest agglomeration (2017), and the largest Spanish-speaking city in the world.
+	    </p><br>
+        <p>
+        Greater Mexico City has a GDP of $411 billion in 2011, making Greater Mexico City one of the most productive urban areas in the world.[19] The city was responsible for generating 15.8% of Mexico's GDP, and the metropolitan area accounted for about 22% of total national GDP.[20] If it were an independent country, in 2013, Mexico City would be the fifth-largest economy in Latin America, five times as large as Costa Rica and about the same size as Peru.Mexico's capital is both the oldest capital city in the Americas and one of two founded by indigenous people, the other being Quito, Ecuador. The city was originally built on an island of Lake Texcoco by the Aztecs in 1325 as Tenochtitlan, which was almost completely destroyed in the 1521 siege of Tenochtitlan and subsequently redesigned and rebuilt in accordance with the Spanish urban standards. In 1524, the municipality of Mexico City was established, known as México Tenochtitlán, and as of 1585, it was officially known as Ciudad de México (Mexico City).it is very good city for strangers Mexico City was the political, administrative, and financial center of a major part of the Spanish colonial empire. After independence from Spain was achieved, the federal district was created in 1824.
+        </p>
+	</section>
+	<script type="text/javascript">
+		var headerbg = document.getElementById('background')
+		window.addEventListener('scroll', function(){
+			headerbg.style.opacity = 1- +window.pageYOffset/550+''
+			headerbg.style.top = +window.pageYOffset+'px'
+			headerbg.style.backgroundPositionY = - +window.pageYOffset/2+'px'
+		})
+	</script>
+</body>
+</html>
